@@ -1,0 +1,44 @@
+form.new-poem-form {
+    padding: 1em;
+    flex-direction: column;
+    background: #16273f;
+    margin-top: 0.5%;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    margin: 20px 10px;
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    display: flex;
+    border: 1px black solid;
+    padding: 30px;
+    box-shadow: 4px 4px 10px black;
+  }
+  
+  form.new-poem-form > input,
+  form.new-poem-form > textarea {
+    font-size: 1em;
+    font-family: sans-serif;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="submit"],
+  button {
+    font-weight: bold;
+    font-size: 1em;
+    background-color: white;
+    border: solid black 1px;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+
+.new-poem {
+    float: right;
+    width: 250px;
+    height: 100px;
+    top: 0;
+    
+
+
+}

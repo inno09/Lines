@@ -1,0 +1,31 @@
+.card {
+    background: var(--background);
+    color: var(--font-color);
+    box-shadow: 4px 4px 10px black;
+    border-radius: 10px;
+    display: table;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border: 1px black solid;
+    
+  }
+  .poems-container {
+    
+
+    grid-gap: 10px;
+    /* background-color:#16273f; */
+    color: #444;
+    text-size-adjust: 9pt;
+    /* border: 1px black solid; */
+  }
+  .poems-container div{
+    /* border: 1px black solid; */
+    background-color:#16273f;
+    color: #fff;
+    margin: 20px;
+    margin-left: 20%;    
+    margin-right: 20%;
+  }
+  .poem{
+    background-color:antiquewhite
+  }

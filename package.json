@@ -9,5 +9,14 @@
     "clean": "rm -rf public",
     "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "npm run clean && npm run build && npm run deploy"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "web-vitals": "^3.0.3"
   }
 }
