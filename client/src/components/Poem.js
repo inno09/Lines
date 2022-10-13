@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const poemAPI = "http://localhost:9292/poems";
+const poemAPI = "/poems";
 
 
 function Poem({poem, removePoem, addToFavorites}) {
@@ -22,7 +22,7 @@ function Poem({poem, removePoem, addToFavorites}) {
     <div>
       <h3>{title}</h3>
       <p>{content}</p>
-      <p><strong>- By {author} ,{genre}</strong></p>
+      <p><strong>- By {author.name} ,{genre.name}</strong></p>
       <div>
         <button type="button" class=" btn btn-primary ms-1 bg-light text-dark">
           🔼 <span class="badge bg-secondary">{upvotes}</span>
