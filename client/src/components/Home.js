@@ -6,7 +6,7 @@ const poemsAPI = " /poems";
 function Home() {
 
   return (
-<div>
+<div className="homepage">
   home page
 </div>
     
