@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-
+import Sidebar from './Sidebar';
+import NewPoem from "./NewPoem";
 function Genre() {
 
   const [genres, setGenre] = useState([]);
@@ -12,6 +13,7 @@ function Genre() {
     }, []);
     return (
       <div>
+          <Sidebar />
        <div className="author">
          {genres.map((genre) => (
            <div className="author-dets" key={genre.id}>
@@ -29,6 +31,7 @@ function Genre() {
              </ul> */}
                {/* <h3>Poem:{poem.title}</h3> */}
              </div>
+             <NewPoem />
            </div>
          ))}
        </div>

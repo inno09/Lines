@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
 import Sidebar from './Sidebar';
 import Home from './Home';
-import Explore from './Explore';
+import Lines from './Lines';
 import Authors from './Authors';
 import Genre from './Genre';
 import Favorites from './Favorites';
@@ -25,10 +25,11 @@ function App() {
             <div>
             </div>
             <Router>
-              <Sidebar />
+            <Home />
+              {/* <Sidebar /> */}
               <Routes>
-                <Route exact path="/" element={<Home />} /> 
-                <Route exact path="/explore" element={<Explore />} />
+                <Route exact path="/home" element={<Home />} /> 
+                <Route exact path="/lines" element={<Lines />} />
                 <Route exact path="/authors" element={<Authors />} />
                 <Route exact path="/genre" element={<Genre />} />
                 <Route exact path="/favorites" element={<Favorites />} />
@@ -37,7 +38,7 @@ function App() {
           </div>
           
           <div>
-            <NewPoem />
+            {/* <NewPoem /> */}
           </div>
           
           

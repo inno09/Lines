@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './NewPoem.css';
 
-const poemAPI = "http://localhost:9292/poems";
+const poemAPI = "/poems";
 
 function NewPoemForm({addPoem}) {
   const [title, setTitle] = useState("");

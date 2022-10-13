@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from "react";
+import Sidebar from './Sidebar';
+import NewPoem from "./NewPoem";
 
 function Author() {
 
@@ -12,6 +14,7 @@ function Author() {
 
   return (
    <div>
+      <Sidebar />
     <div className="author">
       {authors.map((author) => (
         <div className="author-dets">
@@ -24,6 +27,7 @@ function Author() {
           <div>
             <p>Description:{author.description}</p>
           </div>
+          <NewPoem /> 
         </div>
       ))}
     </div>
