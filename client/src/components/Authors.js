@@ -5,7 +5,7 @@ function Author() {
   const [authors, setAuthor] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9292/authors")
+    fetch("/authors")
     .then(response => response.json())
     .then((data) => setAuthor(data));
     }, []);
@@ -19,8 +19,10 @@ function Author() {
             <h2>{author.name}</h2>
           </div>
           <div>
-            <h3>Poem:{author.title}</h3>
-            <p>Content:{author.content}</p>
+          <img src={ author.image } />
+          </div>
+          <div>
+            <p>Description:{author.description}</p>
           </div>
         </div>
       ))}
