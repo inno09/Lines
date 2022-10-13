@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import PoemsContainer from "./PoemContainer";
 import './Home.css';
-const poemsAPI = " http://localhost:9292/poems";
+const poemsAPI = " /poems";
 
 function Home() {
 
