@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PoemsContainer from "./PoemContainer";
 import Sidebar from './Sidebar';
 import NewPoem from "./NewPoem";
+import './Home.css';
 const poemsAPI = " /poems";
 
 function Lines() {
@@ -44,7 +45,7 @@ function Lines() {
   }
 
     return(
-      <div>
+      <div className="center">
         <Sidebar />
       <div className="card">
         <div className="cardContainer">

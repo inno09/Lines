@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './NewPoem.css';
+import './Home.css';
 
 const poemAPI = "/poems";
 
 function NewPoemForm({addPoem}) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [author, setAuthor] = useState("");
-  const [genre, setGenre] = useState("");
+  const [author_id, setAuthor] = useState("");
+  const [genre_id, setGenre] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -19,8 +20,8 @@ function NewPoemForm({addPoem}) {
       body: JSON.stringify({
         title,
         content,
-        author,
-        genre
+        author_id,
+        genre_id
       }),
     })
       .then((r) => r.json())
@@ -28,7 +29,9 @@ function NewPoemForm({addPoem}) {
 
     setTitle("");
     setContent("");
-    setAuthor("");
+    setAuthor();
+    setGenre();
+
   }
 
   return (
@@ -42,13 +45,13 @@ function NewPoemForm({addPoem}) {
 
       <input 
         placeholder="Author" 
-        value={author}
+        value={author_id}
         onChange={(e) => setAuthor(e.target.value)}
       />
 
       <input 
         placeholder="Genre" 
-        value={genre}
+        value={genre_id}
         onChange={(e) => setGenre(e.target.value)}
       />
 
